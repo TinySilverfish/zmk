@@ -52,6 +52,7 @@ if(CONFIG_ZMK_DISPLAY)
     target_sources_ifdef(CONFIG_CUSTOM_WIDGET_LOGO_IMAGE_LPKB app PRIVATE widgets/icons/lpkblogo.c)
     target_sources_ifdef(CONFIG_CUSTOM_WIDGET_LOGO_IMAGE_ZMK app PRIVATE widgets/icons/zmklogo.c)
     target_sources_ifdef(CONFIG_CUSTOM_WIDGET_LOGO_IMAGE_MIRYOKU app PRIVATE widgets/icons/miryokulogo.c)
+    target_sources_ifdef(CONFIG_CUSTOM_WIDGET_LOGO_IMAGE_SILVERFISHBLACK app PRIVATE widgets/icons/silverfishlogoblack.c)
   endif()
 endif()
 
