@@ -99,7 +99,11 @@ lv_obj_t *zmk_display_status_screen() {
   #elif IS_ENABLED(CONFIG_CUSTOM_WIDGET_LOGO_IMAGE_MIRYOKU)
     LV_IMG_DECLARE(miryokulogo);
     lv_img_set_src(zenlogo_icon, &miryokulogo);
+  #elif IS_ENABLED(CONFIG_CUSTOM_WIDGET_LOGO_IMAGE_SILVERFISHBLACK)
+    LV_IMG_DECLARE(silverfishlogoblack);
+    lv_img_set_src(zenlogo_icon, &silverfishlogoblack);
   #endif
+    
 #if IS_ENABLED(CONFIG_CUSTOM_WIDGET_LAYER_STATUS_HIDE_HEADING)
     lv_obj_align(zenlogo_icon, LV_ALIGN_CENTER, 0, 43);
 #else
